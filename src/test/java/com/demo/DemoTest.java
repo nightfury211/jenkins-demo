@@ -7,7 +7,7 @@ public class DemoTest {
 
     @Test
     public void sampleTest() {
-        System.out.println("Running Test from Jenkins");
+        System.out.println("Running Test from Jenkins: POll scm");
         Assert.assertTrue(true);
     }
 }
