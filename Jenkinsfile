@@ -4,16 +4,18 @@ pipeline {
     tools {
         maven 'Maven-3.9'
     }
+
+    stages {
         stage('Test') {
             steps {
-                bat 'mvn test'
+                bat 'mvn clean test'
             }
         }
     }
 
-     post {
-            always {
-                junit 'target/surefire-reports/*.xml'
-            }
+    post {
+        always {
+            junit 'target/surefire-reports/*.xml'
         }
-
+    }
+}
