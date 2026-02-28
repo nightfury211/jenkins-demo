@@ -8,6 +8,6 @@ public class DemoTest {
     @Test
     public void sampleTest() {
         System.out.println("Running Test from Jenkins: POll scm");
-        assertEquals(3, 1 + 1);
+        Assert.assertEquals(3, 1 + 1);
     }
 }
